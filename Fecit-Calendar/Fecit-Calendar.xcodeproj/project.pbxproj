@@ -12,8 +12,10 @@
 		77035C452BCF696A00F73126 /* Fecit_CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */; };
 		77035C4F2BCF696A00F73126 /* Fecit_CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */; };
 		77035C512BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */; };
-		77035C602BCF8D1B00F73126 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C5F2BCF8D1B00F73126 /* CalendarView.swift */; };
+		77035C602BCF8D1B00F73126 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C5F2BCF8D1B00F73126 /* ActionView.swift */; };
 		77035C622BCF9F2300F73126 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77035C612BCF9F2300F73126 /* Colors.xcassets */; };
+		77035C642BCFD8A000F73126 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C632BCFD8A000F73126 /* TabBarView.swift */; };
+		77035C662BCFDC2D00F73126 /* AchieveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C652BCFDC2D00F73126 /* AchieveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,10 @@
 		77035C4A2BCF696A00F73126 /* Fecit-CalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fecit-CalendarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITests.swift; sourceTree = "<group>"; };
 		77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		77035C5F2BCF8D1B00F73126 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		77035C5F2BCF8D1B00F73126 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		77035C612BCF9F2300F73126 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		77035C632BCFD8A000F73126 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		77035C652BCFDC2D00F73126 /* AchieveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchieveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,7 @@
 		77035C5E2BCF8A6500F73126 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				77035C5F2BCF8D1B00F73126 /* CalendarView.swift */,
+				77035C5F2BCF8D1B00F73126 /* ActionView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -275,6 +279,7 @@
 			files = (
 				77035C342BCF696600F73126 /* Fecit_CalendarApp.swift in Sources */,
 				77035C602BCF8D1B00F73126 /* CalendarView.swift in Sources */,
+				77035C602BCF8D1B00F73126 /* ActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

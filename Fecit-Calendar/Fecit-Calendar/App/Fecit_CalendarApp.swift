@@ -11,7 +11,7 @@ import SwiftUI
 struct Fecit_CalendarApp: App {
     var body: some Scene {
         WindowGroup {
-            CalendarView()
+            ActionView()
         }
     }
 }

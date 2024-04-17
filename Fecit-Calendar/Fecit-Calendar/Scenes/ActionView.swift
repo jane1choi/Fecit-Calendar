@@ -1,5 +1,5 @@
 //
-//  CalendarView.swift
+//  ActionView.swift
 //  Fecit-Calendar
 //
 //  Created by EUNJU on 4/17/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CalendarView: View {
+struct ActionView: View {
     
     private let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
    
@@ -70,5 +70,5 @@ struct CalendarView: View {
 }
 
 #Preview {
-    CalendarView()
+    ActionView()
 }
