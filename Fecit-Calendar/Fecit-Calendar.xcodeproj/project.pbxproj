@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77035C342BCF696600F73126 /* Fecit_CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C332BCF696600F73126 /* Fecit_CalendarApp.swift */; };
+		77035C362BCF696600F73126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C352BCF696600F73126 /* ContentView.swift */; };
+		77035C382BCF696900F73126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77035C372BCF696900F73126 /* Assets.xcassets */; };
+		77035C452BCF696A00F73126 /* Fecit_CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */; };
+		77035C4F2BCF696A00F73126 /* Fecit_CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */; };
+		77035C512BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77035C412BCF696A00F73126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77035C282BCF696600F73126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77035C2F2BCF696600F73126;
+			remoteInfo = "Fecit-Calendar";
+		};
+		77035C4B2BCF696A00F73126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77035C282BCF696600F73126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77035C2F2BCF696600F73126;
+			remoteInfo = "Fecit-Calendar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77035C302BCF696600F73126 /* Fecit-Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fecit-Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77035C332BCF696600F73126 /* Fecit_CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarApp.swift; sourceTree = "<group>"; };
+		77035C352BCF696600F73126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77035C372BCF696900F73126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77035C402BCF696A00F73126 /* Fecit-CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fecit-CalendarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarTests.swift; sourceTree = "<group>"; };
+		77035C4A2BCF696A00F73126 /* Fecit-CalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fecit-CalendarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITests.swift; sourceTree = "<group>"; };
+		77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77035C2D2BCF696600F73126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C3D2BCF696A00F73126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C472BCF696A00F73126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77035C272BCF696600F73126 = {
+			isa = PBXGroup;
+			children = (
+				77035C322BCF696600F73126 /* Fecit-Calendar */,
+				77035C432BCF696A00F73126 /* Fecit-CalendarTests */,
+				77035C4D2BCF696A00F73126 /* Fecit-CalendarUITests */,
+				77035C312BCF696600F73126 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77035C312BCF696600F73126 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77035C302BCF696600F73126 /* Fecit-Calendar.app */,
+				77035C402BCF696A00F73126 /* Fecit-CalendarTests.xctest */,
+				77035C4A2BCF696A00F73126 /* Fecit-CalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77035C322BCF696600F73126 /* Fecit-Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				77035C5D2BCF8A5A00F73126 /* App */,
+				77035C5E2BCF8A6500F73126 /* Scenes */,
+				77035C392BCF696900F73126 /* Resoures */,
+			);
+			path = "Fecit-Calendar";
+			sourceTree = "<group>";
+		};
+		77035C392BCF696900F73126 /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				77035C372BCF696900F73126 /* Assets.xcassets */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		77035C432BCF696A00F73126 /* Fecit-CalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */,
+			);
+			path = "Fecit-CalendarTests";
+			sourceTree = "<group>";
+		};
+		77035C4D2BCF696A00F73126 /* Fecit-CalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */,
+				77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */,
+			);
+			path = "Fecit-CalendarUITests";
+			sourceTree = "<group>";
+		};
+		77035C5D2BCF8A5A00F73126 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77035C332BCF696600F73126 /* Fecit_CalendarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		77035C5E2BCF8A6500F73126 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				77035C352BCF696600F73126 /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77035C2F2BCF696600F73126 /* Fecit-Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77035C542BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-Calendar" */;
+			buildPhases = (
+				77035C2C2BCF696600F73126 /* Sources */,
+				77035C2D2BCF696600F73126 /* Frameworks */,
+				77035C2E2BCF696600F73126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fecit-Calendar";
+			productName = "Fecit-Calendar";
+			productReference = 77035C302BCF696600F73126 /* Fecit-Calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77035C3F2BCF696A00F73126 /* Fecit-CalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77035C572BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-CalendarTests" */;
+			buildPhases = (
+				77035C3C2BCF696A00F73126 /* Sources */,
+				77035C3D2BCF696A00F73126 /* Frameworks */,
+				77035C3E2BCF696A00F73126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77035C422BCF696A00F73126 /* PBXTargetDependency */,
+			);
+			name = "Fecit-CalendarTests";
+			productName = "Fecit-CalendarTests";
+			productReference = 77035C402BCF696A00F73126 /* Fecit-CalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77035C492BCF696A00F73126 /* Fecit-CalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77035C5A2BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-CalendarUITests" */;
+			buildPhases = (
+				77035C462BCF696A00F73126 /* Sources */,
+				77035C472BCF696A00F73126 /* Frameworks */,
+				77035C482BCF696A00F73126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77035C4C2BCF696A00F73126 /* PBXTargetDependency */,
+			);
+			name = "Fecit-CalendarUITests";
+			productName = "Fecit-CalendarUITests";
+			productReference = 77035C4A2BCF696A00F73126 /* Fecit-CalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77035C282BCF696600F73126 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					77035C2F2BCF696600F73126 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					77035C3F2BCF696A00F73126 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 77035C2F2BCF696600F73126;
+					};
+					77035C492BCF696A00F73126 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 77035C2F2BCF696600F73126;
+					};
+				};
+			};
+			buildConfigurationList = 77035C2B2BCF696600F73126 /* Build configuration list for PBXProject "Fecit-Calendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77035C272BCF696600F73126;
+			productRefGroup = 77035C312BCF696600F73126 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77035C2F2BCF696600F73126 /* Fecit-Calendar */,
+				77035C3F2BCF696A00F73126 /* Fecit-CalendarTests */,
+				77035C492BCF696A00F73126 /* Fecit-CalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77035C2E2BCF696600F73126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77035C382BCF696900F73126 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C3E2BCF696A00F73126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C482BCF696A00F73126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77035C2C2BCF696600F73126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77035C362BCF696600F73126 /* ContentView.swift in Sources */,
+				77035C342BCF696600F73126 /* Fecit_CalendarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C3C2BCF696A00F73126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77035C452BCF696A00F73126 /* Fecit_CalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77035C462BCF696A00F73126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77035C512BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift in Sources */,
+				77035C4F2BCF696A00F73126 /* Fecit_CalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77035C422BCF696A00F73126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77035C2F2BCF696600F73126 /* Fecit-Calendar */;
+			targetProxy = 77035C412BCF696A00F73126 /* PBXContainerItemProxy */;
+		};
+		77035C4C2BCF696A00F73126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77035C2F2BCF696600F73126 /* Fecit-Calendar */;
+			targetProxy = 77035C4B2BCF696A00F73126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77035C522BCF696A00F73126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77035C532BCF696A00F73126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77035C552BCF696A00F73126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77035C562BCF696A00F73126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77035C582BCF696A00F73126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-CalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fecit-Calendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fecit-Calendar";
+			};
+			name = Debug;
+		};
+		77035C592BCF696A00F73126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-CalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fecit-Calendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fecit-Calendar";
+			};
+			name = Release;
+		};
+		77035C5B2BCF696A00F73126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-CalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fecit-Calendar";
+			};
+			name = Debug;
+		};
+		77035C5C2BCF696A00F73126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.fecit.Fecit-CalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fecit-Calendar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77035C2B2BCF696600F73126 /* Build configuration list for PBXProject "Fecit-Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77035C522BCF696A00F73126 /* Debug */,
+				77035C532BCF696A00F73126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77035C542BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77035C552BCF696A00F73126 /* Debug */,
+				77035C562BCF696A00F73126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77035C572BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-CalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77035C582BCF696A00F73126 /* Debug */,
+				77035C592BCF696A00F73126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77035C5A2BCF696A00F73126 /* Build configuration list for PBXNativeTarget "Fecit-CalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77035C5B2BCF696A00F73126 /* Debug */,
+				77035C5C2BCF696A00F73126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77035C282BCF696600F73126 /* Project object */;
+}
