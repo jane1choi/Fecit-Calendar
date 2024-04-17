@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		77035C342BCF696600F73126 /* Fecit_CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C332BCF696600F73126 /* Fecit_CalendarApp.swift */; };
-		77035C362BCF696600F73126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C352BCF696600F73126 /* ContentView.swift */; };
 		77035C382BCF696900F73126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77035C372BCF696900F73126 /* Assets.xcassets */; };
 		77035C452BCF696A00F73126 /* Fecit_CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */; };
 		77035C4F2BCF696A00F73126 /* Fecit_CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */; };
 		77035C512BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */; };
+		77035C602BCF8D1B00F73126 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77035C5F2BCF8D1B00F73126 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,13 @@
 /* Begin PBXFileReference section */
 		77035C302BCF696600F73126 /* Fecit-Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fecit-Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77035C332BCF696600F73126 /* Fecit_CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarApp.swift; sourceTree = "<group>"; };
-		77035C352BCF696600F73126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77035C372BCF696900F73126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77035C402BCF696A00F73126 /* Fecit-CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fecit-CalendarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77035C442BCF696A00F73126 /* Fecit_CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarTests.swift; sourceTree = "<group>"; };
 		77035C4A2BCF696A00F73126 /* Fecit-CalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fecit-CalendarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77035C4E2BCF696A00F73126 /* Fecit_CalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITests.swift; sourceTree = "<group>"; };
 		77035C502BCF696A00F73126 /* Fecit_CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fecit_CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77035C5F2BCF8D1B00F73126 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 		77035C5E2BCF8A6500F73126 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				77035C352BCF696600F73126 /* ContentView.swift */,
+				77035C5F2BCF8D1B00F73126 /* CalendarView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -269,8 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77035C362BCF696600F73126 /* ContentView.swift in Sources */,
 				77035C342BCF696600F73126 /* Fecit_CalendarApp.swift in Sources */,
+				77035C602BCF8D1B00F73126 /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Resoures/Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 397WA8BG8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -462,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fecit-Calendar/Resoures/Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 397WA8BG8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

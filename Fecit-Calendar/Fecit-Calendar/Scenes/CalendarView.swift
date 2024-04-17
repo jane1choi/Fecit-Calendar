@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CalendarView.swift
 //  Fecit-Calendar
 //
 //  Created by EUNJU on 4/17/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CalendarView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CalendarView()
 }
+
