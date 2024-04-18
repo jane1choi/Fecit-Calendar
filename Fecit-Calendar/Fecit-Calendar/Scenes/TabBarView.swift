@@ -17,7 +17,7 @@ enum Tab {
 
 struct TabBarView: View {
     
-    @State var selection = Tab.action
+    @State private var selection = Tab.action
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor.mainGray
