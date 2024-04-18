@@ -10,6 +10,7 @@ import SwiftUI
 struct ActionView: View {
     
     private let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+    @State private var month = Date()
    
     var body: some View {
         VStack(spacing: 0) {
@@ -45,7 +46,7 @@ struct ActionView: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, maxHeight: 50)
             .overlay {
-                Text("March 2023")
+                Text("\(month.formatted(.dateTime.month(.wide).year()))")
                     .foregroundStyle(.white)
                     .fontWeight(.semibold)
             }

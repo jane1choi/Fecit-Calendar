@@ -22,7 +22,6 @@ struct TabBarView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor.mainGray
     }
-
     
     var body: some View {
         TabView(selection: $selection) {
