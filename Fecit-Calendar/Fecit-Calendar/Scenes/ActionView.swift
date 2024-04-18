@@ -43,7 +43,7 @@ struct ActionView: View {
                         .foregroundStyle(Color.white)
                 })
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 12)
             .frame(maxWidth: .infinity, maxHeight: 50)
             .overlay {
                 Text("\(month.formatted(.dateTime.month(.wide).year()))")
@@ -52,20 +52,18 @@ struct ActionView: View {
             }
             .background(Color(.mainBlue))
             
-            HStack(alignment: .center) {
+            HStack(spacing: 0) {
                 ForEach(days, id: \.self) { day in
                     Text(day)
                         .font(.system(size: 14))
                         .foregroundStyle(.white)
-                    if day != "SAT" {
-                        Spacer()
-                    }
+                        .frame(width: UIScreen.main.bounds.width / 7)
                 }
             }
-            .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, maxHeight: 40)
             .background(Color(.mainBlue))
-            Spacer()
+            
+            CalendarView()
         }
     }
 }
