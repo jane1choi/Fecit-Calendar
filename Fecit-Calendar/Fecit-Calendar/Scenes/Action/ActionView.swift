@@ -60,17 +60,39 @@ struct ActionView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: 40)
             .background(Color(.mainBlue))
-            
-            CalendarView(controller) { date in
-                GeometryReader { geometry in
-                    ZStack {
-                        Text("\(date.day)")
-                            .font(.system(size: 12))
+
+            ZStack {
+                CalendarView(controller) { date in
+                    GeometryReader { geometry in
+                        ZStack {
+                            Text("\(date.day)")
+                                .font(.system(size: 12))
                             .foregroundStyle(.black)
-                            .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
-                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
-                            .padding(.top, 10)
+                                .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
+                                .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
+                                .padding(.top, 10)
+                        }
                     }
+                }
+                
+                VStack {
+                    Spacer()
+                    Button(action: {
+                        
+                    }, label: {
+                        HStack {
+                            Image(systemName: "square.and.pencil")
+                                .tint(.white)
+                            Text("New Action")
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color(.white))
+                                
+                        }
+                        .padding()
+                        .background(.mainBlue)
+                        .cornerRadius(40)
+                    })
+                    .padding(.bottom, 20)
                 }
             }
         }
