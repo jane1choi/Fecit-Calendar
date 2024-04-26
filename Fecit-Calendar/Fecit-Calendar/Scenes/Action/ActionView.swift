@@ -65,12 +65,19 @@ struct ActionView: View {
                 CalendarView(controller) { date in
                     GeometryReader { geometry in
                         ZStack {
+                            if date.isToday {
+                                Circle()
+                                    .frame(width: geometry.size.width / 2, height: geometry.size.height, alignment: .top)
+                                    .padding(.top, 0)
+                                    .foregroundColor(.blue)
+                            }
+
                             Text("\(date.day)")
                                 .font(.system(size: 12))
                                 .foregroundStyle(getColor(date))
                                 .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
                                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
-                                .padding(.top, 10)
+                                .padding(.top, 13)
                         }
                     }
                 }
