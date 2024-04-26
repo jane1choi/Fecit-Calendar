@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ActionView: View {
     @ObservedObject var controller = CalendarController()
+    private var schedules: [YearMonthDay: [(String, Color)]] = [
+        YearMonthDay.current: [("Helloooooo", Color.orange),
+                               ("byeee", Color.blue),
+                               ("blahblah", Color.pink)]
+    ]
    
     var body: some View {
         VStack(spacing: 0) {
@@ -73,11 +78,27 @@ struct ActionView: View {
                             }
 
                             Text("\(date.day)")
-                                .font(.system(size: 12))
+                                .font(.system(size: 12, weight: .medium))
                                 .foregroundStyle(getColor(date))
                                 .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
                                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                                 .padding(.top, 13)
+                            
+                            VStack(spacing: 2) {
+                                if let events = schedules[date] {
+                                    ForEach(events.indices, id:\.self) { index in
+                                        let event = events[index]
+                                        Text(event.0)
+                                            .lineLimit(1)
+                                            .foregroundStyle(.white)
+                                            .font(.system(size: 8, weight: .bold))
+                                            .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
+                                            .frame(width: geometry.size.width, alignment: .center)
+                                            .background(event.1)
+                                            .cornerRadius(4)
+                                    }
+                                }
+                            }
                         }
                     }
                 }
