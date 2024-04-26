@@ -67,7 +67,7 @@ struct ActionView: View {
                         ZStack {
                             Text("\(date.day)")
                                 .font(.system(size: 12))
-                            .foregroundStyle(.black)
+                                .foregroundStyle(getColor(date))
                                 .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
                                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                                 .padding(.top, 10)
@@ -95,6 +95,21 @@ struct ActionView: View {
                     .padding(.bottom, 20)
                 }
             }
+        }
+    }
+    
+    // TODO: 메서드 위치 옮기기
+    private func getColor(_ date: YearMonthDay) -> Color {
+        if date.isToday {
+            return Color.white
+        }
+        
+        if date.dayOfWeek == .sun {
+            return Color.red
+        } else if date.dayOfWeek == .sat {
+            return Color.blue
+        } else {
+            return Color.black
         }
     }
 }
