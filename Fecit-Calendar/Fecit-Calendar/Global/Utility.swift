@@ -131,7 +131,7 @@ struct YearMonthDay: Equatable, Hashable {
         self.isFocusYearMonth = isFocusYearMonth
     }
     
-    static var current: YearMonthDay {
+    static var today: YearMonthDay {
         get {
             let today = Date()
             return YearMonthDay(

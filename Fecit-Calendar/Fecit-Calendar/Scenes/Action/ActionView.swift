@@ -10,9 +10,13 @@ import SwiftUI
 struct ActionView: View {
     @ObservedObject var controller = CalendarController()
     private var schedules: [YearMonthDay: [(String, Color)]] = [
-        YearMonthDay.current: [("Helloooooo", Color.orange),
-                               ("byeee", Color.blue),
-                               ("blahblah", Color.pink)]
+        YearMonthDay.today: [("Helloooooo", Color.orange),
+                             ("byeee", Color.blue),
+                             ("blahblah", Color.pink),
+                             ("어쩌구저쩌구", Color.red)],
+        YearMonthDay(year: 2024, month: 04, day: 12): [
+            ("Helloooooo", Color.purple)
+        ]
     ]
    
     var body: some View {
@@ -85,20 +89,10 @@ struct ActionView: View {
                                 .padding(.top, 13)
                             
                             VStack(spacing: 2) {
-                                if let events = schedules[date] {
-                                    ForEach(events.indices, id:\.self) { index in
-                                        let event = events[index]
-                                        Text(event.0)
-                                            .lineLimit(1)
-                                            .foregroundStyle(.white)
-                                            .font(.system(size: 8, weight: .bold))
-                                            .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
-                                            .frame(width: geometry.size.width, alignment: .center)
-                                            .background(event.1)
-                                            .cornerRadius(4)
-                                    }
-                                }
+                                markEvent(event: schedules, date: date, width: geometry.size.width)
                             }
+                            .padding(.top, 32)
+                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                         }
                     }
                 }
@@ -138,6 +132,34 @@ struct ActionView: View {
             return Color.blue
         } else {
             return Color.black
+        }
+    }
+    
+    @ViewBuilder func markEvent(event: [YearMonthDay: [(String, Color)]],
+                                date: YearMonthDay, width: CGFloat) -> some View {
+        if let events = schedules[date] {
+            ForEach(0..<min(events.count, 3), id:\.self) { index in
+                let event = events[index]
+                Text(event.0)
+                    .lineLimit(1)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 8, weight: .bold))
+                    .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
+                    .frame(width: width, alignment: .center)
+                    .background(event.1)
+                    .cornerRadius(4)
+            }
+            
+            if events.count > 3 {
+                Text("+\(events.count - 3)")
+                    .lineLimit(1)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 8, weight: .bold))
+                    .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
+                    .frame(width: width, alignment: .center)
+                    .background(Color.gray)
+                    .cornerRadius(4)
+            }
         }
     }
 }
