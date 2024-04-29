@@ -91,8 +91,8 @@ struct ActionView: View {
                             VStack(spacing: 2) {
                                 markEvent(event: schedules, date: date, width: geometry.size.width)
                             }
-                                        let event = events[index]
-                                        Text(event.0)
+                            .padding(.top, 32)
+                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                         }
                     }
                 }
