@@ -56,6 +56,7 @@ struct CreateEventView: View {
             
             Button(action: {
                 isPresented = false
+                schedules[targetDate ?? today, default: []].append(Event(title: eventTitle, color: selectedColor))
             }, label: {
                 Text("일정 추가하기")
                     .foregroundStyle(.white)
