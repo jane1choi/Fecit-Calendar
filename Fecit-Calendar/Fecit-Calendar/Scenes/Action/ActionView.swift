@@ -136,7 +136,6 @@ struct ActionView: View {
         }
     }
     
-    // TODO: 메서드 위치 옮기기
     private func getColor(_ date: YearMonthDay) -> Color {
         if date.isToday {
             return Color.white
