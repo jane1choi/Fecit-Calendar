@@ -172,34 +172,6 @@ struct YearMonthDay: Equatable, Hashable {
         return components
     }
     
-    func addDay(value: Int) -> YearMonthDay {
-        let gregorianCalendar = NSCalendar(calendarIdentifier: .gregorian)!
-        let toDate = self.toDateComponents()
-
-        var components = DateComponents()
-        components.day = value
-
-        let addedDate = Calendar.current.date(byAdding: components, to: gregorianCalendar.date(from: toDate)!)!
-        let ret = YearMonthDay(
-            year: Calendar.current.component(.year, from: addedDate),
-            month: Calendar.current.component(.month, from: addedDate),
-            day: Calendar.current.component(.day, from: addedDate)
-        )
-        return ret
-    }
-    
-    func diffDay(value: YearMonthDay) -> Int {
-        var origin = self.toDateComponents()
-        origin.hour = 0
-        origin.minute = 0
-        origin.second = 0
-        var new = value.toDateComponents()
-        new.hour = 0
-        new.minute = 0
-        new.second = 0
-        return Calendar.current.dateComponents([.day], from: Calendar.current.date(from: origin)!, to: Calendar.current.date(from: new)!).month!
-    }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(self.year)
         hasher.combine(self.month)
