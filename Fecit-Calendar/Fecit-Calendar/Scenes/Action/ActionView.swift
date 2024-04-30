@@ -7,15 +7,23 @@
 
 import SwiftUI
 
+struct Event: Equatable, Identifiable {
+    let id: UUID = UUID()
+    let title: String
+    let color: Color
+}
+
 struct ActionView: View {
     @ObservedObject var controller = CalendarController()
-    private var schedules: [YearMonthDay: [(String, Color)]] = [
-        YearMonthDay.today: [("Helloooooo", Color.orange),
-                             ("byeee", Color.blue),
-                             ("blahblah", Color.pink),
-                             ("어쩌구저쩌구", Color.red)],
+    @State private var showSheet: Bool = false
+    @State private var focusDate: YearMonthDay?
+    @State private var schedules: [YearMonthDay: [Event]] = [
+        YearMonthDay.today: [Event(title: "hellooo", color: .purple),
+                             Event(title: "byeeee", color: .yellow),
+                             Event(title: "tesststst", color: .blue),
+                             Event(title: "메롱", color: .red)],
         YearMonthDay(year: 2024, month: 04, day: 12): [
-            ("Helloooooo", Color.purple)
+            Event(title: "hiiiii", color: .purple)
         ]
     ]
    
@@ -87,20 +95,24 @@ struct ActionView: View {
                                 .opacity(date.isFocusYearMonth == true ? 1 : 0.4)
                                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                                 .padding(.top, 13)
+                                .onTapGesture {
+                                    focusDate = date
+                                }
                             
                             VStack(spacing: 2) {
                                 markEvent(event: schedules, date: date, width: geometry.size.width)
                             }
-                            .padding(.top, 32)
+                            .padding(.top, 30)
                             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
                         }
+                        .background( (date == focusDate) ? .gray.opacity(0.3) : .white)
                     }
                 }
                 
                 VStack {
                     Spacer()
                     Button(action: {
-                        
+                        showSheet.toggle()
                     }, label: {
                         HStack {
                             Image(systemName: "square.and.pencil")
@@ -115,6 +127,10 @@ struct ActionView: View {
                         .cornerRadius(40)
                     })
                     .padding(.bottom, 20)
+                    .sheet(isPresented: $showSheet) {
+                        CreateEventView(isPresented: $showSheet, schedules: $schedules, targetDate: $focusDate)
+                            .presentationDetents([.medium])
+                    }
                 }
             }
         }
@@ -135,18 +151,18 @@ struct ActionView: View {
         }
     }
     
-    @ViewBuilder func markEvent(event: [YearMonthDay: [(String, Color)]],
+    @ViewBuilder func markEvent(event: [YearMonthDay: [Event]],
                                 date: YearMonthDay, width: CGFloat) -> some View {
-        if let events = schedules[date] {
-            ForEach(0..<min(events.count, 3), id:\.self) { index in
+        if let events = event[date] {
+            ForEach(0..<min(events.count, 3), id: \.self) { index in
                 let event = events[index]
-                Text(event.0)
+                Text(event.title)
                     .lineLimit(1)
                     .foregroundStyle(.white)
                     .font(.system(size: 8, weight: .bold))
                     .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
                     .frame(width: width, alignment: .center)
-                    .background(event.1)
+                    .background(event.color)
                     .cornerRadius(4)
             }
             

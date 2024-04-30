@@ -47,16 +47,14 @@ struct CalendarView<CalendarCell: View>: View {
     }
 }
 
-struct CalendarView_Previews: PreviewProvider {
-    static var previews: some View {
-        CalendarView(CalendarController()) { date in
-            GeometryReader { geometry in
-                Text("\(String(date.year))/\(date.month)/\(date.day)")
-                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
-                    .border(.black, width: 1)
-                    .font(.system(size: 8))
-                    .opacity(date.isFocusYearMonth == true ? 1 : 0.6)
-            }
+#Preview {
+    CalendarView(CalendarController()) { date in
+        GeometryReader { geometry in
+            Text("\(String(date.year))/\(date.month)/\(date.day)")
+                .frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
+                .border(.black, width: 1)
+                .font(.system(size: 8))
+                .opacity(date.isFocusYearMonth == true ? 1 : 0.6)
         }
     }
 }
