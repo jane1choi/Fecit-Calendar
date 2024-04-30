@@ -23,6 +23,7 @@
 		7715E7FC2BD685BD007DAE57 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715E7FB2BD685BD007DAE57 /* CalendarController.swift */; };
 		7715E7FE2BD7469E007DAE57 /* InfinitePagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715E7FD2BD7469E007DAE57 /* InfinitePagerView.swift */; };
 		7715E8002BD7491C007DAE57 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715E7FF2BD7491C007DAE57 /* Utility.swift */; };
+		77EE59EA2BDF3E39000B15BA /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE59E92BDF3E39000B15BA /* CreateEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		7715E7FB2BD685BD007DAE57 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		7715E7FD2BD7469E007DAE57 /* InfinitePagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePagerView.swift; sourceTree = "<group>"; };
 		7715E7FF2BD7491C007DAE57 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		77EE59E92BDF3E39000B15BA /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				77035C6D2BD0BCAB00F73126 /* CalendarView.swift */,
 				7715E7FB2BD685BD007DAE57 /* CalendarController.swift */,
 				7715E7FD2BD7469E007DAE57 /* InfinitePagerView.swift */,
+				77EE59E92BDF3E39000B15BA /* CreateEventView.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				77035C6C2BCFDDC500F73126 /* SocietyView.swift in Sources */,
 				77035C642BCFD8A000F73126 /* TabBarView.swift in Sources */,
 				77035C6A2BCFDDBE00F73126 /* LibraryView.swift in Sources */,
+				77EE59EA2BDF3E39000B15BA /* CreateEventView.swift in Sources */,
 				7715E7FE2BD7469E007DAE57 /* InfinitePagerView.swift in Sources */,
 				77035C602BCF8D1B00F73126 /* ActionView.swift in Sources */,
 			);
